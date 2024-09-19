@@ -30,3 +30,16 @@ main {
 
 img {
     max-width: 90%;
+    }
+
+
+    
+.image-container {
+        display: flex;
+        justify-content: space-between; /* Espaço entre as imagens */
+        flex-wrap: wrap; /* Permite que as imagens passem para a linha de baixo, se necessário */
+}
+.image-container img {
+        width: 30%; /* Ajuste a largura conforme necessário */
+        margin: 5px; /* Espaçamento entre as imagens */
+}
