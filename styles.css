@@ -1,18 +1,62 @@
 body {
-    background-color: #1D4221;
+    background-color: #124461;
     color: white;
     font-family: "Bai Jamjuree", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 700px;
+    min-height: 100vh; /* Preenche a altura total da viewport */
     margin: 0;
+    padding: 20px; /* Adiciona um pouco de padding ao redor da página */
+}
+
+.highlight {
+    color: #5b793a;
 }
 
 button {
-    background-color: #64A712;
+    background-color: #5b793a;
     color: white;
     font-family: "Bai Jamjuree", sans-serif;
+    border: none; /* Remove a borda */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 15px 30px; /* Aumenta o espaçamento interno do botão */
+    font-size: 15px; /* Aumenta o tamanho da fonte */
+    margin: 20px; /* Diminui o espaçamento entre os botões */
+}
+
+/* Centraliza e ajusta as imagens */
+.image-container {
+    display: flex;
+    justify-content: space-between; /* Espaço garantido entre as imagens */
+    gap: 20px; /* Espaçamento de 20px entre as imagens */
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Permite que as imagens fiquem em múltiplas linhas se necessário */
+    max-width: 1000px; /* Limita a largura total do contêiner de imagens */
+    margin: 0 auto; /* Centraliza o contêiner de imagens */
+}
+
+.image-container img {
+    width: calc(33.333% - 20px); /* Ajusta o tamanho das imagens considerando o gap */
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+/* Ajuste para o texto */
+p {
+    max-width: 800px; /* Limita a largura do texto */
+    font-size: 16px; /* Tamanho da fonte legível */
+    line-height: 1.5;
+    margin: 10px auto;
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Para centralizar o texto e as imagens */
+main {
+    text-align: center;
+    max-width: 1200px; /* Limita a largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo */
 }
 
 .passo {
@@ -20,26 +64,10 @@ button {
 }
 
 .passo.ativo {
-    display:block;
-}
-
-main {
-    text-align: center;
-    max-width: 90%;
+    display: block;
 }
 
 img {
-    max-width: 90%;
-    }
-
-
-    
-.image-container {
-        display: flex;
-        justify-content: space-between; /* Espaço entre as imagens */
-        flex-wrap: wrap; /* Permite que as imagens passem para a linha de baixo, se necessário */
-}
-.image-container img {
-        width: 30%; /* Ajuste a largura conforme necessário */
-        margin: 5px; /* Espaçamento entre as imagens */
+    max-width: 90%; /* ESPÇAMENTO ENTRE AS IMAGENS */
+    height: auto; /* Garante que as imagens se adaptem à largura disponível */
 }
